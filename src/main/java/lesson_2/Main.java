@@ -22,16 +22,14 @@ package lesson_2;
 
 public class Main {
     public static void main(String[] args) {
+        doTask1();
         doTask6(doArray());
         doTask7(doArray(), 2);
     }
     static void doTask1 () {
         int [] arr = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] < 1) {
-                arr[i] = 1;
-            } else {
-                arr[i] = 0;}
+            arr[i] = arr[i] == 1 ? 0 : 1;
             System.out.print(arr[i]+ " ");
         }
     }
@@ -115,7 +113,7 @@ public class Main {
         int temp;
         for (int i = 0; i < arr.length; i++) {
             temp = arr[i];
-            arr[i] =
+            arr[i] = 0;
 
         }
 

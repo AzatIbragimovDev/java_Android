@@ -40,7 +40,7 @@ package lesson_9;
                     if (array[i].length != 4) {
                         throw new MyArraySizeException();
                     }
-                    for (int j = 0; j < array[j].length; j++) {
+                    for (int j = 0; j < array[i].length; j++) {
                         try {
                             sumArr += Integer.parseInt(array[i][j]);
                         } catch (NumberFormatException e) {
